@@ -68,6 +68,11 @@ namespace HelloWorld
             //逻辑运算符
             oa.operators4();
 
+            //位运算符
+            oa.operators5();
+
+            
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
