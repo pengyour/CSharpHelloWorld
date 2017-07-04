@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DeclaringConstants.cs" />
     <Compile Include="ExplicitConversion.cs" />
+    <Compile Include="NumberManipulator.cs" />
     <Compile Include="OperatorsAppl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

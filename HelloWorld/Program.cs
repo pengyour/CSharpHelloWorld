@@ -58,20 +58,36 @@ namespace HelloWorld
             //dc.Constants();
 
             //运算符
-            OperatorsAppl oa = new OperatorsAppl();
-            oa.operators();
+//             OperatorsAppl oa = new OperatorsAppl();
+//             oa.operators();
+// 
+//             //算术运算符
+//             oa.operators2();
+//             //关系运算符
+//             oa.operators3();
+//             //逻辑运算符
+//             oa.operators4();
+// 
+//             //位运算符
+//             oa.operators5();
+//             //其他运算符
+//             oa.operators6();
 
-            //算术运算符
-            oa.operators2();
-            //关系运算符
-            oa.operators3();
-            //逻辑运算符
-            oa.operators4();
+            /* 局部变量定义 */
+            int a = 100;
+            int b = 200;
+            int ret;
+            NumberManipulator n = new NumberManipulator();
 
-            //位运算符
-            oa.operators5();
+            //调用 FindMax 方法
+            ret = n.FindMax(a, b);
+            Console.WriteLine("最大值是： {0}", ret);
 
-            
+            //调用 factorial 方法
+            Console.WriteLine("6 的阶乘是： {0}", n.factorial(6));
+            Console.WriteLine("7 的阶乘是： {0}", n.factorial(7));
+            Console.WriteLine("8 的阶乘是： {0}", n.factorial(8));
+
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
