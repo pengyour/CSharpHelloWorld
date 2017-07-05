@@ -30,6 +30,7 @@ namespace HelloWorld
         //{
         //    double d = 5673.74;
         //    int i;
+        //    int j;
 
         //    // 强制转换 double 为 int
         //    i = (int)d;
