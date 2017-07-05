@@ -45,11 +45,16 @@
   <ItemGroup>
     <Compile Include="DeclaringConstants.cs" />
     <Compile Include="ExplicitConversion.cs" />
+    <Compile Include="MyArray.cs" />
+    <Compile Include="MyString.cs" />
+    <Compile Include="NullablesAtShow.cs" />
     <Compile Include="NumberManipulator.cs" />
     <Compile Include="OperatorsAppl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="VariableDefinition.cs" />
   </ItemGroup>
   <ItemGroup>

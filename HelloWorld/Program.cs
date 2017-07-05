@@ -76,48 +76,70 @@ namespace HelloWorld
             /* 局部变量定义 */
             int a = 100;
             int b = 200;
-            int ret;
+            //             int ret;
             NumberManipulator n = new NumberManipulator();
+            // 
+            //             //调用 FindMax 方法
+            //             ret = n.FindMax(a, b);
+            //             Console.WriteLine("最大值是： {0}", ret);
+            // 
+            //             //调用 factorial 方法
+            //             Console.WriteLine("6 的阶乘是： {0}", n.factorial(6));
+            //             Console.WriteLine("7 的阶乘是： {0}", n.factorial(7));
+            //             Console.WriteLine("8 的阶乘是： {0}", n.factorial(8));
 
-            //调用 FindMax 方法
-            ret = n.FindMax(a, b);
-            Console.WriteLine("最大值是： {0}", ret);
+            //值传递方式
+            /* 局部变量定义 */
+            //             int a = 100;
+            //             int b = 200;
 
-            //调用 factorial 方法
-            Console.WriteLine("6 的阶乘是： {0}", n.factorial(6));
-            Console.WriteLine("7 的阶乘是： {0}", n.factorial(7));
-            Console.WriteLine("8 的阶乘是： {0}", n.factorial(8));
+            //             Console.WriteLine("在交换之前，a 的值： {0}", a);
+            //             Console.WriteLine("在交换之前，b 的值： {0}", b);
+            // 
+            //             /* 调用函数来交换值 */
+            //             n.swap(a, b);
+            // 
+            //             Console.WriteLine("在交换之后，a 的值： {0}", a);
+            //             Console.WriteLine("在交换之后，b 的值： {0}", b);
 
+            //             Console.WriteLine("引用传递在交换之前，a 的值： {0}", a);
+            //             Console.WriteLine("引用传递在交换之前，b 的值： {0}", b);
+            // 
+            //             /* 调用函数来交换值 */
+            //             n.swapByRef(ref a, ref b);
+            // 
+            //             Console.WriteLine("引用传递在交换之后，a 的值： {0}", a);
+            //             Console.WriteLine("引用传递在交换之后，b 的值： {0}", b);
+
+            /* 局部变量定义 */
+
+            //             Console.WriteLine("在方法调用之前，a 的值： {0}", a);
+            // 
+            //             /* 调用函数来获取值 */
+            //             n.getValue(out a);
+            // 
+            //             Console.WriteLine("在方法调用之后，a 的值： {0}", a);
+
+            /* 调用函数来获取值 */
+            //             n.getValues(out a, out b);
+            // 
+            //             Console.WriteLine("在方法调用之后，a 的值： {0}", a);
+            //             Console.WriteLine("在方法调用之后，b 的值： {0}", b);
+
+            //             NullablesAtShow nas = new NullablesAtShow();
+            //             nas.NullableDemo();
+            //             nas.NullableDemo2();
+
+            //             MyArray ma = new MyArray();
+            //             ma.myArrayDemo();
+            //             ma.myArrayDemoByForEach();
+
+            MyString ms = new MyString();
+            ms.StringDemo();
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
     }
-
-    class Rectangle
-    {
-        //成员变量
-        double length;
-        double width;
-        public void Acceptdetails() {
-            length = 4.5;
-            width = 3.5;
-        }
-        /**
-         *计算面积 
-         **/
-        public double GetArea() {
-            return width * length;
-        }
-        //显示面积数据
-        public void Display() {
-            Console.WriteLine("Length:{0}",length);
-            Console.WriteLine("Width:{0}", width);
-
-            Console.WriteLine("Area:{0}",this.GetArea());
-
-        }
-    }
-
 
 }
