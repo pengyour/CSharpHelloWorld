@@ -53,6 +53,12 @@ namespace HelloWorld
 
     }
 
+    class ForkTest {
+        public void writeLove() {
+            Console.WriteLine("Hello My baby!");
+        }
+    }
+
     class StringConversion
     {
         public void toString()
