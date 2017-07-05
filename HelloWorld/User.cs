@@ -38,5 +38,10 @@ namespace HelloWorld
 // 
 //             }
         }
+
+        public String getUserName() {
+            return firstName;
+        }
+
     }
 }

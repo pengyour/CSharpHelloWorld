@@ -41,6 +41,7 @@ namespace HelloWorld
         //    Console.ReadKey();
 
         //}
+        //我试着改一下这个文件吧！！！！modify by landy 2017.07.05
 
         public int convertDouble2Int(double d)
         {
