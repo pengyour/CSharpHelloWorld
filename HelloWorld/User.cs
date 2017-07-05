@@ -21,27 +21,90 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// 建造者模式的应用
+/// </summary>
 namespace HelloWorld
 {
     class User
     {
-        private static String firstName;
-        private static String lastName;
-        private static int age;
-        private static String addr;
-        private static String phone;
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String addr;
+        private String phone;
 
-        public static class UserBuilder
+        private User(UserBuilder builder)
         {
-//             public UserBuilder(String firstName, String lastName) {
-// 
-//             }
+            this.firstName = builder.getFirstName();
+            this.lastName = builder.getLastName();
+            this.age = builder.getAge();
+            this.phone = builder.getPhone();
+            this.addr = builder.getAddr();
         }
 
-        public String getUserName() {
-            return firstName;
+        public class UserBuilder
+        {
+            private String firstName;
+            private String lastName;
+            private int age;
+            private String addr;
+            private String phone;
+
+            public UserBuilder(String firstName, String lastName) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+
+            public UserBuilder setAge(int age) {
+                this.age = age;
+                return this;
+            }
+
+            public UserBuilder setAddr(String addr)
+            {
+                this.addr = addr;
+                return this;
+            }
+
+            public UserBuilder setPhone(String phone)
+            {
+                this.phone = phone;
+                return this;
+            }
+
+            public User build()
+            {
+                Console.WriteLine("初始化User对象 firstName={0},lastName={1},age={2},addr={3},phone={4}", this.getFirstName() ,this.getLastName(),this.getAge(),this.getAddr(),this.getPhone());
+                return new User(this);
+            }
+
+            public String getFirstName()
+            {
+                return this.firstName;
+            }
+
+            public String getLastName()
+            {
+                return this.lastName;
+            }
+            public int getAge()
+            {
+                return this.age;
+            }
+
+            public String getAddr()
+            {
+                return this.addr;
+            }
+
+            public String getPhone()
+            {
+                return this.phone;
+            }
+
         }
 
+        
     }
 }

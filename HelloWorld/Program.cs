@@ -134,8 +134,15 @@ namespace HelloWorld
             //             ma.myArrayDemo();
             //             ma.myArrayDemoByForEach();
 
-            MyString ms = new MyString();
-            ms.StringDemo();
+//             MyString ms = new MyString();
+//             ms.StringDemo();
+
+            //
+            User user = new User.UserBuilder("liu", "landy")
+                .setAge(30)
+                .setAddr("湖里")
+                .setPhone("13333321312")
+                .build();
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
